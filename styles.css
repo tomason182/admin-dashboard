@@ -1,14 +1,27 @@
 .main-container {
     display: grid;
-    grid-template-columns: 1fr 5fr ;
+    grid-template-columns: 1fr 5fr;
 }
 
 .sidebar {
     grid-column: 1 / 2;
+    grid-row: 1 / 3;
 }
 
-.search {
+.top-bar {
     grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    align-items: center;
+}
+
+.site-content {
+    border: 1px solid red;
+    height: 500px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
 }
 
 .dashboard {
@@ -48,4 +61,94 @@
     width: 20px;
     height: auto;
     margin-right: 10px;
+}
+
+.search {
+    grid-column: 1 / 2;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+input[type= "search"] {
+    -webkit-appearance: none;
+    -moz-appearance:none;
+    appearance: none;
+}
+
+input[type="search"] {
+    width: 90%;
+    height: 2rem;
+    border-radius: 1rem;
+    background-color: #a3a3a360;
+    border-style: none;
+}
+
+.user-profile-container {
+    grid-column: 2 / 3;    
+    
+}
+
+.user-profile-container ul {
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content:flex-end;
+}
+
+.user-profile-container img {
+    width: 25px;
+    height: auto;
+}
+
+.user-profile-item {
+    margin: 0 15px;
+    top: 0;
+}
+
+.user-profile-container .avatar img {
+    width: 50px;
+    height: auto;
+}
+
+.login-status {
+    grid-column: 1 / 2 ;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    align-items: center;
+}
+
+.login-status img {
+    width: 80px;
+    height: auto;
+    grid-column: 1 / 2;
+}
+
+.login-status .grettings {
+    grid-column: 2 / 3;
+}
+
+.buttons {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.buttons button {
+    background-color: #1d4ed8;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin-left: 0.6rem ;
 }
