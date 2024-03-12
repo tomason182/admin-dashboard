@@ -1,0 +1,32 @@
+.dashboard {
+    display: flex;
+}
+.dashboard img {
+    width: 36px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.side-menu img {
+    width: 16px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.sidebar ul {
+    padding-left: 2px;
+}
+
+.side-menu li {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.side-menu li a{
+    text-decoration: none;
+    color: black;
+}
+
+.side-menu li:nth-child(6){
+    margin-bottom: 60px;
+}
