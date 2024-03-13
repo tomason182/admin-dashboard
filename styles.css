@@ -8,6 +8,10 @@ body {
     padding: 0;
 }
 
+p {
+    color: #64748b95;
+}
+
 .main-container {
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -19,7 +23,7 @@ body {
 .sidebar {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    background-color: #38bdf8;
+    background-color: #3b82f6;
     padding-left: 2rem;
 }
 
@@ -29,6 +33,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr ;
     align-items: center;
+    padding: 1rem 2rem;
+    box-shadow:inset 0 -0.1rem 0.2rem #64748b60;
 }
 
 .site-content {
@@ -36,30 +42,37 @@ body {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 100%;
     background-color: #e4e4e7 ;
+    padding-bottom: 3rem;
 }
 
 .projects {
     grid-column: 1 / 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    grid-template-rows: 1fr 5fr 5fr 5fr;
     padding: 0 2rem;
 }
 
 .projects-items {
-    border: 2px solid salmon;
+    background-color: white;
+    border-left: 5px solid salmon;
     border-radius: 1rem;
+    padding: 1rem 3rem;
+    margin: 1rem 1rem 1rem 0;
 }
-.projects span {
+.projects h3 {
+    display: flex;
     grid-column: 1 / 3;
+    justify-content:left;
+    align-items:baseline;
 }
 
 .extra-info {
-    border: 1px solid orange;
     grid-column: 2 / 3;
+
 }
+
 .dashboard {
     display: flex;
     color: white;
@@ -126,7 +139,7 @@ input[type="search"] {
     width: 90%;
     height: 2rem;
     border-radius: 1rem;
-    background-color: #a3a3a360;
+    background-color: #64748b30;
     border-style: none;
     padding-left: 1rem;
 }
@@ -194,10 +207,58 @@ button {
 }
 
 .buttons button {
-    background-color: #38bdf8;
+    background-color: #3b82f6;
     padding: 1em 3em;
     border-radius: 5px;
     border: none;
     color: white;
     margin-left: 0.6rem ;
+}
+
+
+.announcements {
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+}
+
+.trending{
+    grid-row: 2 / 3;
+}
+
+.announcements-container {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+
+}
+
+.trending-container {
+    border-radius: 2rem;
+    background-color: white;
+}
+
+.trending-user {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center ;
+    padding-left: 2rem;
+
+}
+
+.trending-user img {
+    width: 4rem;
+    height: auto;
+    grid-column: 1 / 2;
+    padding-left:1rem ;
+}
+
+.trending-user-info{
+    grid-column: 2 / 3;
+}
+
+.trending-user-info h5,
+.trending-user-info p {
+    margin: 0;
 }
