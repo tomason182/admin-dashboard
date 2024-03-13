@@ -1,11 +1,19 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Regular.ttf");
+}
+
 .main-container {
     display: grid;
     grid-template-columns: 1fr 5fr;
+    font-family: "roboto", sans-serif;
 }
 
 .sidebar {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    background-color: #3b82f6;
+    padding-left: 15px;
 }
 
 .top-bar {
@@ -26,6 +34,7 @@
 
 .dashboard {
     display: flex;
+    color: white;
 }
 .dashboard img {
     width: 36px;
@@ -33,14 +42,20 @@
     margin-right: 5px;
 }
 
-.side-menu img {
-    width: 16px;
-    height: auto;
-    margin-right: 5px;
+.side-menu {
+    padding: 0;
 }
 
-.sidebar ul {
-    padding-left: 2px;
+.side-menu-item {
+    display: flex;
+    
+}
+
+.side-menu img {
+    width: 25px;
+    height: auto;
+    margin-right: 15px;
+    
 }
 
 .side-menu li {
@@ -50,7 +65,8 @@
 
 .side-menu li a{
     text-decoration: none;
-    color: black;
+    color: white;
+    font-size: large;
 }
 
 .side-menu li:nth-child(6){
@@ -146,7 +162,7 @@ button {
 
 .buttons button {
     background-color: #1d4ed8;
-    padding: 1rem 3rem;
+    padding: 1em 3em;
     border-radius: 5px;
     border: none;
     color: white;
