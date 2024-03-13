@@ -34,7 +34,8 @@ p {
     grid-template-columns: 1fr 1fr ;
     align-items: center;
     padding: 1rem 2rem;
-    box-shadow:inset 0 -0.1rem 0.2rem #64748b60;
+    box-sizing: border-box;
+    box-shadow:inset 0rem -0.2rem 0.3rem #64748b60;
 }
 
 .site-content {
@@ -56,10 +57,12 @@ p {
 
 .projects-items {
     background-color: white;
-    border-left: 5px solid salmon;
+    border-left: 0.65rem solid salmon;
     border-radius: 1rem;
     padding: 1rem 3rem;
     margin: 1rem 1rem 1rem 0;
+    box-sizing: border-box;
+    box-shadow: 0.3rem 0.3rem 0.3rem #64748b60;
 }
 .projects h3 {
     display: flex;
@@ -70,17 +73,18 @@ p {
 
 .extra-info {
     grid-column: 2 / 3;
-
 }
 
 .dashboard {
     display: flex;
     color: white;
+    font-size: x-large;
 }
 .dashboard img {
-    width: 36px;
+    width: 56px;
     height: auto;
     margin-right: 5px;
+    filter: invert(1);
 }
 
 .side-menu {
@@ -89,6 +93,7 @@ p {
 
 .side-menu-item {
     display: flex;
+    filter: invert(1);
     
 }
 
@@ -96,7 +101,6 @@ p {
     width: 25px;
     height: auto;
     margin-right: 15px;
-    
 }
 
 .side-menu li {
@@ -104,9 +108,9 @@ p {
     margin-bottom: 15px;
 }
 
-.side-menu li a{
+.side-menu li a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: large;
     font-weight: 800;
 }
@@ -215,28 +219,22 @@ button {
     margin-left: 0.6rem ;
 }
 
-
-.announcements {
-    grid-row: 1 / 2;
-    display: grid;
-    grid-template-rows: 1fr 9fr;
-}
-
-.trending{
-    grid-row: 2 / 3;
-}
-
 .announcements-container {
-    padding: 1rem;
+    padding: 1rem 3rem;
     margin: 1rem;
     border-radius: 1rem;
     background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0.3rem 0.3rem 0.3rem #64748b60;
+ 
 
 }
 
 .trending-container {
+    margin: 1rem;
     border-radius: 2rem;
     background-color: white;
+    box-shadow: 0.3rem 0.3rem 0.3rem #64748b60;
 }
 
 .trending-user {
